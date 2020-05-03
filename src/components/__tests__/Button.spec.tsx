@@ -8,7 +8,7 @@ import { assert } from 'chai';
 describe('Button Component',()=> {
 
 
-    it('Contains valid className',()=> {
+    it('Contains classname',()=> {
         const wrapper = shallow(<Button/>);
         const className = wrapper.find('.fa4');
         assert.equal(className.length, 1);
@@ -16,7 +16,7 @@ describe('Button Component',()=> {
 
 
 
-     it('Contains the button element',()=> {
+     it('Contains Button',()=> {
         const wrapper = shallow(<Button/>);
         expect(wrapper).toBeDefined();
      });
@@ -24,7 +24,7 @@ describe('Button Component',()=> {
    
      
      
-     it('should call mock function when button is clicked', () => {
+     it('Simulate Mock Fn', () => {
         const mockFn = jest.fn();
         const tree = shallow(
             <button className="fa4" onClick={mockFn} />
